@@ -11,6 +11,7 @@ module.exports = {
       "pea-blue": "#8ecfc5",
       "pea-red": "#f2a3c5",
       "pea-bg": "#fefdb6",
+      white: "#fff",
     },
     fontFamily: {
       roadstore: ["RoadStore", "sans-serif"],
