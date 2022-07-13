@@ -7,6 +7,11 @@
   src: url("/assets/fonts/RoadStore-Dafont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Exo:wght@900&family=Poppins:wght@400;500;600&display=swap");
+}
+
 html,
 body {
   padding: 0;

@@ -10,9 +10,11 @@ module.exports = {
       pea: "#fefc6d",
       "pea-blue": "#8ecfc5",
       "pea-red": "#f2a3c5",
+      "pea-bg": "#fefdb6",
     },
     fontFamily: {
       roadstore: ["RoadStore", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],
