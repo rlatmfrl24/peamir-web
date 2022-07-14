@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Peameal Bacon Sandwich",
+    "description": "A delicious sandwich with a Peameal bacon",
+    "price": "39,000",
+    "link": "/assets/images/image_placeholder.jpg"
+  },
+  {
+    "name": "Cubano Sandwich",
+    "description": "A delicious sandwich with a cubano ham",
+    "price": "39,000",
+    "link": "/assets/images/image_placeholder.jpg"
+  },
+  {
+    "name": "Hot Chicken Sandwich",
+    "description": "A delicious sandwich with a hot chicken",
+    "price": "39,000",
+    "link": "/assets/images/image_placeholder.jpg"
+  },
+  {
+    "name": "Meatball",
+    "description": "",
+    "price": "39,000",
+    "link": "/assets/images/image_placeholder.jpg"
+  },
+  {
+    "name": "Mac and Cheese",
+    "description": "",
+    "price": "39,000",
+    "link": "/assets/images/image_placeholder.jpg"
+  }
+]

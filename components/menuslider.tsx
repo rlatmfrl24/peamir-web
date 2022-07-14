@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { NextPage } from "next";
 import Image from "next/image";
+import menulist from "../public/assets/menulist.json";
 
 const MenuCard: NextPage<{
   link: string;
@@ -77,31 +78,14 @@ export default class MenuSlider extends Component {
     };
     return (
       <Slider {...settings}>
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Peameal Bacon Sandwich"
-          price="39,000"
-        />
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Cubano Sandwich"
-          price="39,000"
-        />
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Hot Chicken Sandwich"
-          price="39,000"
-        />
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Meatball"
-          price="39,000"
-        />
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Mac And Cheese"
-          price="39,000"
-        />
+        {menulist.map((item, index) => (
+          <MenuCard
+            key={index}
+            link={item.link}
+            name={item.name}
+            price={item.price}
+          />
+        ))}
       </Slider>
     );
   }
