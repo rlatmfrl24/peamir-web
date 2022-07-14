@@ -12,7 +12,7 @@ const MenuCard: NextPage<{
 }> = ({ link, name, price }) => {
   return (
     <div id="recipe-card-example" className="w-full h-full flex justify-center">
-      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col ">
+      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col w-full h-full ">
         <div className="">
           <Image
             className="rounded-full"
@@ -24,8 +24,10 @@ const MenuCard: NextPage<{
             objectFit="cover"
           />
         </div>
-        <p className="mt-3 flex flex-col items-center ">
-          <span className="font-roadstore text-lg text-center">{name}</span>
+        <p className="mt-3 flex flex-col items-center h-20 justify-between">
+          <span className="font-roadstore text-lg text-center flex-1 flex items-center">
+            {name}
+          </span>
           <span className="font-poppins font-black">{price}</span>
         </p>
       </div>
@@ -77,27 +79,27 @@ export default class MenuSlider extends Component {
       <Slider {...settings}>
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
+          name="Peameal Bacon Sandwich"
           price="39,000"
         />
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
+          name="Cubano Sandwich"
           price="39,000"
         />
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
+          name="Hot Chicken Sandwich"
           price="39,000"
         />
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
+          name="Meatball"
           price="39,000"
         />
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
+          name="Mac And Cheese"
           price="39,000"
         />
       </Slider>
