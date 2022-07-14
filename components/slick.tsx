@@ -12,8 +12,8 @@ const MenuCard: NextPage<{
 }> = ({ link, name, price }) => {
   return (
     <div id="recipe-card-example" className="w-full flex justify-center">
-      <div className="bg-white m-5 w-full p-11 rounded-3xl shadow-xl flex flex-col ">
-        <div className="flex-1 w-80 h-60">
+      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col ">
+        <div className="h-full">
           <Image
             className="rounded-full"
             src={link}
@@ -25,7 +25,7 @@ const MenuCard: NextPage<{
           />
         </div>
         <p className="mt-3 flex flex-col items-center ">
-          <span className="font-roadstore text-lg">{name}</span>
+          <span className="font-roadstore text-lg text-center">{name}</span>
           <span className="font-poppins font-black">{price}</span>
         </p>
       </div>
@@ -39,7 +39,7 @@ export default class SimpleSlider extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: "60px",
@@ -75,11 +75,6 @@ export default class SimpleSlider extends Component {
     };
     return (
       <Slider {...settings}>
-        <MenuCard
-          link="/assets/images/image_placeholder.jpg"
-          name="Peamir Signarture Sandwich"
-          price="39,000"
-        />
         <MenuCard
           link="/assets/images/image_placeholder.jpg"
           name="Peamir Signarture Sandwich"

@@ -4,13 +4,13 @@ const Location: NextPage = () => {
   return (
     <div className="flex flex-col items-center h-full bg-pea-bg">
       <div className="font-roadstore text-5xl my-10">Location</div>
-      <div className="flex-1 flex gap-10">
-        <div>
+      <div className="w-full p-12 h-full flex flex-col sm:flex-row gap-10">
+        <div className="flex-1">
           <iframe
-            className="rounded-3xl shadow-xl"
+            className="w-full h-full rounded-3xl shadow-xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.097649623728!2d127.10797011513887!3d37.50561497980925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca59c22173a71%3A0xbaf7e818798b52de!2s22%20Songpa-daero%2042-gil%2C%20Songpa-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1657691853703!5m2!1sen!2skr"
-            width="450"
-            height="450"
+            width="360"
+            height="360"
             loading="lazy"
           ></iframe>
         </div>

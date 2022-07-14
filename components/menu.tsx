@@ -10,38 +10,6 @@ const Menu: NextPage = () => {
       <div className="w-full">
         <SimpleSlider />
       </div>
-
-      {/* <div className="w-full h-full overflow-auto">
-        <div className="h-full flex gap-5 overflow-visible">
-
-
-          <MenuCard
-            link="/assets/images/image_placeholder.jpg"
-            name="Peamir Signarture Sandwich"
-            price="39,000"
-          />
-          <MenuCard
-            link="/assets/images/image_placeholder.jpg"
-            name="Peamir Signarture Sandwich"
-            price="39,000"
-          />
-          <MenuCard
-            link="/assets/images/image_placeholder.jpg"
-            name="Peamir Signarture Sandwich"
-            price="39,000"
-          />
-          <MenuCard
-            link="/assets/images/image_placeholder.jpg"
-            name="Peamir Signarture Sandwich"
-            price="39,000"
-          />
-          <MenuCard
-            link="/assets/images/image_placeholder.jpg"
-            name="Peamir Signarture Sandwich"
-            price="39,000"
-          />
-        </div>
-      </div> */}
     </div>
   );
 };
