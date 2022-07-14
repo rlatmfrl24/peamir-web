@@ -11,9 +11,9 @@ const MenuCard: NextPage<{
   price: string;
 }> = ({ link, name, price }) => {
   return (
-    <div id="recipe-card-example" className="w-full flex justify-center">
+    <div id="recipe-card-example" className="w-full h-full flex justify-center">
       <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col ">
-        <div className="h-full">
+        <div className="">
           <Image
             className="rounded-full"
             src={link}
@@ -33,7 +33,7 @@ const MenuCard: NextPage<{
   );
 };
 
-export default class SimpleSlider extends Component {
+export default class MenuSlider extends Component {
   render() {
     const settings = {
       dots: true,
