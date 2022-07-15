@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Menu: NextPage = () => {
   return (
-    <div className="flex flex-col items-center h-full bg-pea-bg p-12">
+    <div className="flex flex-col items-center h-full bg-pea-bg p-4 :smp-12">
       <PageTitle title="Menu" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
