@@ -18,14 +18,12 @@ const Home: NextPage = () => {
       <Main />
       <Menu />
       <Location />
-      <>4</>
     </ReactPageScroller>
   ) : (
     <div>
       <Main />
       <Menu />
       <Location />
-      <>4</>
     </div>
   );
 };
