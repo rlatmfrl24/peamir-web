@@ -12,15 +12,15 @@ const MenuCard: NextPage<{
   price: string;
 }> = ({ link, name, price }) => {
   return (
-    <div id="recipe-card-example" className="w-full h-full flex justify-center">
-      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col w-full h-full ">
+    <div id="recipe-card-example" className="w-full flex justify-center">
+      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col ">
         <div className="">
           <Image
             className="rounded-full"
             src={link}
             width={240}
             height={240}
-            layout="responsive"
+            layout="intrinsic"
             alt={link}
             objectFit="cover"
           />

@@ -29,12 +29,12 @@ const Home: NextPage = () => {
         <Location />
       </ReactPageScroller>
       {currentPage === 2 && (
-        <div className="absolute bottom-0 right-0 mr-4 mb-7">
+        <div className="absolute bottom-0 right-0 mr-4 mb-4">
           <button
-            className="bg-pea-blue font-roadstore text-black text-2xl rounded-full px-4 py-2"
+            className="bg-pea-red font-roadstore text-black text-2xl rounded-full px-4 py-2"
             onClick={() => setCurrentPage(0)}
           >
-            Top
+            Go Top
           </button>
         </div>
       )}
