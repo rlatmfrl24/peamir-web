@@ -37,11 +37,11 @@ const Main: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
   return (
     <div className="flex flex-col h-full">
       <TopMenu setPage={setPage} />
-      <div className="flex-1 bg-pea-bg">
-        <div className="w-full h-full py-5 mx-12 gap-12 lg:pl-24 flex flex-row items-center">
+      <div className="flex flex-1 justify-center bg-pea-bg">
+        <div className="h-full sm:mx-12 gap-12 py-24 sm:py-5 lg:pl-24 sm:flex flex-row items-center sm:flex-1">
           <div
             id="about-description"
-            className="flex w-full sm:w-fit justify-center items-center"
+            className="flex sm:w-fit justify-center items-center"
           >
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -56,7 +56,7 @@ const Main: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
               }}
             >
               <div className="font-poppins font-bold text-6xl">
-                <span className="w-full font-roadstore">
+                <span className="font-roadstore">
                   CENTER
                   <br />
                   AMERICAN
