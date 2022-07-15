@@ -21,7 +21,12 @@ const Location: NextPage = () => {
           <div>
             <LocationCard />
             <Link href="https://www.instagram.com/peamir_diner/">
-              <div className="bg-white p-4 mt-5 font-roadstore shadow-xl rounded-lg cursor-pointer">
+              <div className="bg-white p-4 mt-5 font-roadstore shadow-xl rounded-lg cursor-pointer flex items-center gap-5">
+                <Image
+                  src="/assets/images/instagram.png"
+                  width={32}
+                  height={32}
+                />
                 Instagram
               </div>
             </Link>
@@ -34,11 +39,13 @@ const Location: NextPage = () => {
       >
         <Image
           src="/assets/images/logo.png"
-          width={64}
-          height={64}
+          width={48}
+          height={48}
           className="rounded-full"
         />
-        Copyright © 2022 Peamir. All rights reserved
+        <span className="flex-1 flex justify-center">
+          Copyright © 2022 Peamir. All rights reserved
+        </span>
       </div>
     </>
   );

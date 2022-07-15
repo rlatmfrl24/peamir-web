@@ -9,19 +9,39 @@ import { useEffect, useState } from "react";
 const Home: NextPage = () => {
   const [isBrowser, setIsBrowser] = useState(false);
 
+  const [currentPage, setCurrentPage] = useState(0);
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
   useEffect(() => {
     setIsBrowser(!isMobile);
   }, []);
 
   return isBrowser ? (
-    <ReactPageScroller>
-      <Main />
-      <Menu />
-      <Location />
-    </ReactPageScroller>
+    <>
+      <ReactPageScroller
+        pageOnChange={handlePageChange}
+        customPageNumber={currentPage}
+      >
+        <Main setPage={setCurrentPage} />
+        <Menu />
+        <Location />
+      </ReactPageScroller>
+      {currentPage === 2 && (
+        <div className="absolute bottom-0 right-0 mr-4 mb-7">
+          <button
+            className="bg-pea-blue font-roadstore text-black text-2xl rounded-full px-4 py-2"
+            onClick={() => setCurrentPage(0)}
+          >
+            Top
+          </button>
+        </div>
+      )}
+    </>
   ) : (
     <div>
-      <Main />
+      <Main setPage={setCurrentPage} />
       <Menu />
       <Location />
     </div>

@@ -1,8 +1,11 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Dispatch, SetStateAction } from "react";
 
-const TopMenu: NextPage = () => {
+const TopMenu: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
+  setPage,
+}) => {
   return (
     <div
       id="top-menu"
@@ -11,29 +14,28 @@ const TopMenu: NextPage = () => {
       <div className="font-roadstore text-3xl sm:mr-16">PEAMIR</div>
       <div
         id="top-menu-button-box"
-        className="flex flex-row gap-8 font-poppins font-bold mt-2 sm:mt-0"
+        className="flex flex-row gap-8 font-roadstore  mt-2 sm:mt-0"
       >
-        <div className="hover:underline">
+        <div className="hover:underline" onClick={() => setPage(0)}>
           <Link href={"/"}>About</Link>
         </div>
-        <div className="hover:underline">
+        <div className="hover:underline" onClick={() => setPage(1)}>
           <Link href={"/"}>Menu</Link>
         </div>
-        <div className="hover:underline">
+        <div className="hover:underline" onClick={() => setPage(2)}>
           <Link href={"/"}>Location</Link>
-        </div>
-        <div className="hover:underline">
-          <Link href={"/"}>Contact</Link>
         </div>
       </div>
     </div>
   );
 };
 
-const Main: NextPage = () => {
+const Main: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
+  setPage,
+}) => {
   return (
     <div className="h-full flex flex-col">
-      <TopMenu />
+      <TopMenu setPage={setPage} />
       <div className="flex-1 bg-pea-bg">
         <div className="w-full h-full mx-12 gap-12 lg:pl-24 flex flex-row">
           <div
