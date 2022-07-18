@@ -12,8 +12,8 @@ const MenuCard: NextPage<{
   price: string;
 }> = ({ link, name, price }) => {
   return (
-    <div id="recipe-card-example" className="w-full flex justify-center">
-      <div className="bg-white m-5 p-11 rounded-3xl shadow-xl flex flex-col ">
+    <div id="recipe-card-example" className="w-ful flex justify-center">
+      <div className="bg-white m-5 p-6 sm:p-11 rounded-3xl shadow-xl flex flex-col ">
         <div className="">
           <Image
             className="rounded-full"
@@ -26,7 +26,7 @@ const MenuCard: NextPage<{
           />
         </div>
         <p className="mt-3 flex flex-col items-center h-20 justify-between">
-          <span className="font-roadstore text-lg text-center flex-1 flex items-center">
+          <span className="font-roadstore text-md sm:text-lg text-center flex-1 flex items-center">
             {name}
           </span>
           <span className="font-poppins font-black">{price}</span>
