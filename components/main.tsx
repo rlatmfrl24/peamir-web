@@ -15,7 +15,7 @@ const TopMenu: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
       <div className="font-roadstore text-3xl sm:mr-16">PEAMIR</div>
       <div
         id="top-menu-button-box"
-        className="flex flex-row gap-8 font-roadstore  mt-2 sm:mt-0"
+        className="flex-row gap-8 font-roadstore mt-2 sm:mt-0 hidden sm:flex"
       >
         <div className="hover:underline" onClick={() => setPage(0)}>
           <Link href={"/"}>About</Link>
@@ -57,7 +57,7 @@ const Main: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
             >
               <div className="font-poppins font-bold text-6xl">
                 <span className="font-roadstore">
-                  CENTER
+                  CENTERAL
                   <br />
                   AMERICAN
                   <br />

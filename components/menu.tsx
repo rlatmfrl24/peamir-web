@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Menu: NextPage = () => {
   return (
-    <div className="flex flex-col items-center h-full bg-pea-bg p-4 :smp-12">
+    <div className="flex flex-col items-center h-full bg-pea-bg p-4 sm:p-12">
       <PageTitle title="Menu" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -19,7 +19,7 @@ const Menu: NextPage = () => {
             delay: 0.5,
           },
         }}
-        className="w-full flex-1 h-auto overflow-auto mt-8"
+        className="w-full h-full flex-1 overflow-hidden sm:mt-8"
       >
         <MenuSlider />
       </motion.div>

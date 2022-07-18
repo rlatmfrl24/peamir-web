@@ -100,15 +100,15 @@ const Footer: NextPage = () => {
   return (
     <div
       id="footer"
-      className="bg-pea-blue h-20 flex flex-row justify-between px-12 items-center font-poppins font-black"
+      className="bg-pea-blue h-20 px-12 flex flex-row justify-between items-center font-poppins font-black"
     >
       <Image
+        className="rounded-full"
         src="/assets/images/logo.png"
         width={48}
         height={48}
-        className="rounded-full"
       />
-      <span className="flex-1 flex justify-center">
+      <span className="flex-1 flex justify-center text-sm sm:text-lg ml-5 sm:ml-0">
         Copyright © 2022 Peamir. All rights reserved
       </span>
     </div>
