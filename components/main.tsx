@@ -57,7 +57,7 @@ const Main: NextPage<{ setPage: Dispatch<SetStateAction<number>> }> = ({
             >
               <div className="font-poppins font-bold text-6xl">
                 <span className="font-roadstore">
-                  CENTERAL
+                  CENTRAL
                   <br />
                   AMERICAN
                   <br />
